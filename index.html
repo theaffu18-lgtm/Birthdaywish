@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="theme-color" content="#26152f" />
+<meta name="description" content="A little universe of birthday wishes, memories, and love." />
+<title>A Little Universe for You ✨</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Sacramento&display=swap');
+:root{--pink:#f6a9c4;--rose:#ed5d91;--cream:#fff8f5;--lav:#dcd2ff;--night:#20132d;--gold:#f1d49b;--ink:#36243d;--muted:#826c83;--glass:rgba(255,255,255,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'DM Sans',sans-serif;overflow-x:hidden}button,input{font:inherit}button{cursor:pointer}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--gold);outline-offset:4px}.hidden{display:none!important}.serif{font-family:'Playfair Display',serif}.script{font-family:'Sacramento',cursive}.eyebrow{text-transform:uppercase;letter-spacing:.22em;font-size:.72rem;font-weight:700;color:var(--rose)}h1,h2,h3,p{margin-top:0}h1,h2{font-family:'Playfair Display',serif}h1{font-size:clamp(2.8rem,7vw,6.2rem);line-height:1.02;margin-bottom:1rem}h2{font-size:clamp(2rem,4vw,3.7rem);line-height:1.1;margin-bottom:1rem}p{line-height:1.8}.muted{color:var(--muted)}.center{text-align:center}.section{padding:100px 22px;position:relative}.container{width:min(1100px,100%);margin:auto}.section-intro{max-width:700px;margin:0 auto 42px;text-align:center}.section-intro p{color:var(--muted)}.pill{display:inline-flex;align-items:center;gap:8px;border:1px solid rgba(237,93,145,.25);background:rgba(255,255,255,.65);border-radius:999px;padding:10px 15px;color:var(--rose);font-size:.85rem}.btn{border:0;border-radius:999px;padding:14px 22px;background:linear-gradient(135deg,var(--rose),#bd5bd8);color:white;font-weight:700;box-shadow:0 10px 28px #d85c9940;transition:transform .2s,box-shadow .2s}.btn:hover{transform:translateY(-3px);box-shadow:0 14px 32px #d85c9955}.btn.secondary{background:white;color:var(--rose);border:1px solid #f1c6d8;box-shadow:none}.btn.ghost{background:rgba(255,255,255,.1);border:1px solid #ffffff45;box-shadow:none;color:white}.tiny{font-size:.85rem}.topbar{position:fixed;z-index:30;top:12px;left:50%;transform:translateX(-50%);width:min(950px,calc(100% - 24px));display:flex;align-items:center;justify-content:space-between;gap:12px;padding:10px 14px;border:1px solid #ffffffa8;border-radius:18px;background:#fff9f2d9;backdrop-filter:blur(18px);box-shadow:0 8px 30px #41234410}.brand{font-family:'Playfair Display',serif;font-weight:700;color:#8c3d6a}.top-actions{display:flex;align-items:center;gap:8px}.icon-btn{border:1px solid #f1c6d8;background:white;border-radius:999px;padding:9px 12px;color:#8c3d6a}.progress-wrap{height:4px;position:fixed;z-index:31;top:0;left:0;right:0;background:transparent}.progress-bar{height:100%;width:0;background:linear-gradient(90deg,var(--rose),var(--gold));transition:width .2s}
+.hero{min-height:100svh;position:relative;display:grid;place-items:center;overflow:hidden;padding:120px 22px 80px;color:white;background:radial-gradient(ellipse at 20% 20%,#71406f 0,transparent 42%),radial-gradient(ellipse at 80% 75%,#5e326f 0,transparent 38%),linear-gradient(145deg,#1b1228,#302044 60%,#1d1833);text-align:center}.hero:before{content:"";position:absolute;inset:0;background-image:radial-gradient(2px 2px at 20% 30%,#fff 50%,transparent 60%),radial-gradient(1px 1px at 70% 20%,#fff 50%,transparent 60%),radial-gradient(2px 2px at 80% 60%,#f9d3e5 50%,transparent 60%),radial-gradient(1px 1px at 30% 80%,#fff 50%,transparent 60%),radial-gradient(1px 1px at 60% 45%,#fff 50%,transparent 60%);background-size:250px 220px;opacity:.65;animation:starDrift 30s linear infinite}.hero-inner{position:relative;z-index:2;max-width:900px}.hero .eyebrow{color:var(--gold)}.hero h1{color:#fff3f7;text-shadow:0 0 35px #ffb9d544}.hero p{max-width:700px;margin:0 auto 25px;color:#f5e7f5}.hero .script{font-size:clamp(2rem,5vw,4rem);color:#ffc7dc;display:block;margin-bottom:12px}.hero-actions{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:26px}.moon{position:absolute;top:15%;right:12%;width:80px;height:80px;border-radius:50%;background:#fff1c9;box-shadow:0 0 45px #ffe5a966;opacity:.8}.moon:after{content:"";position:absolute;top:-7px;left:20px;width:78px;height:78px;background:#251731;border-radius:50%}.orb{position:absolute;border-radius:50%;filter:blur(1px);opacity:.7;animation:float 9s ease-in-out infinite}.orb.one{width:120px;height:120px;background:#d86da633;bottom:10%;left:8%}.orb.two{width:70px;height:70px;background:#b4a1ff33;top:25%;left:14%;animation-delay:-4s}.scroll-cue{position:absolute;bottom:22px;left:50%;transform:translateX(-50%);color:#f6dce9;font-size:.8rem;letter-spacing:.12em}.heart{position:fixed;z-index:40;pointer-events:none;animation:heartRise 2.7s ease-out forwards;font-size:20px}.intro-modal{position:fixed;inset:0;z-index:60;background:#1d1029f2;display:grid;place-items:center;padding:20px;color:white}.intro-card{width:min(480px,100%);text-align:center;padding:36px 25px;border:1px solid #ffffff35;border-radius:28px;background:linear-gradient(145deg,#ffffff14,#ffffff08);box-shadow:0 25px 90px #0004}.intro-card h2{color:#ffeaf3}.name-input{width:100%;border-radius:14px;border:1px solid #ffffff40;background:#ffffff12;color:white;padding:14px 16px;margin:12px 0 18px}.name-input::placeholder{color:#d7c4d9}
+.cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}.wish-card,.reason-card,.envelope-card,.memory-card,.timeline-card{border:1px solid #f2dce5;background:#fffdfc;border-radius:22px;padding:22px;box-shadow:0 12px 35px #56223b08;transition:transform .25s,box-shadow .25s}.wish-card:hover,.reason-card:hover,.envelope-card:hover,.memory-card:hover{transform:translateY(-5px);box-shadow:0 18px 40px #56223b13}.wish-card{min-height:175px;position:relative;overflow:hidden}.wish-card .emoji{font-size:1.5rem}.wish-card p{margin:12px 0 0;line-height:1.65}.wish-card:after{content:"✦";position:absolute;right:15px;top:12px;color:#f2c5d7;font-size:1.4rem}.reason-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:12px}.reason-card{min-height:125px;text-align:center;display:grid;place-items:center;padding:14px;cursor:pointer}.reason-card .heart-icon{font-size:1.8rem;color:var(--rose)}.reason-card .reason-num{font-size:.72rem;color:#b58aa1;letter-spacing:.12em}.reason-card .reason-text{font-size:.9rem;line-height:1.5}.section-blush{background:linear-gradient(180deg,#fff7fa,#fceaf2)}.section-lav{background:linear-gradient(180deg,#f8f5ff,#f2edff)}.section-dark{background:linear-gradient(150deg,#21142f,#382046);color:white}.section-dark .section-intro p{color:#dfcfe2}.section-dark .eyebrow{color:var(--gold)}
+.envelope-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}.envelope-card{text-align:center;padding:20px 12px;cursor:pointer}.envelope-card .env{font-size:2.3rem;display:block;margin-bottom:10px;transition:transform .3s}.envelope-card:hover .env{transform:rotate(-8deg) scale(1.1)}.envelope-card strong{font-size:.9rem;line-height:1.4;display:block}.timeline{max-width:760px;margin:auto;position:relative}.timeline:before{content:"";position:absolute;left:20px;top:10px;bottom:10px;width:2px;background:linear-gradient(var(--rose),#b9a3ff,var(--gold))}.timeline-item{position:relative;padding:0 0 25px 58px}.timeline-dot{position:absolute;left:11px;top:18px;width:20px;height:20px;border-radius:50%;background:var(--rose);border:5px solid #fff;box-shadow:0 0 0 3px #f5c4d8}.timeline-card{padding:22px}.timeline-card .date{font-size:.75rem;text-transform:uppercase;letter-spacing:.15em;color:var(--rose);font-weight:700}.memory-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}.memory-card{padding:12px 12px 20px;cursor:pointer;transform:rotate(var(--rotate,0deg))}.photo-placeholder{aspect-ratio:4/3;border-radius:14px;background:linear-gradient(135deg,#f8d7e4,#e7dfff);display:grid;place-items:center;color:#9a537a;font-size:3rem;overflow:hidden}.photo-placeholder img{width:100%;height:100%;object-fit:cover}.memory-card h3{font-family:'Playfair Display',serif;font-size:1.1rem;margin:16px 8px 5px}.memory-card p{font-size:.85rem;line-height:1.6;margin:0 8px;color:var(--muted)}
+.quiz-box{max-width:700px;margin:auto;background:#ffffff12;border:1px solid #ffffff2a;border-radius:28px;padding:clamp(22px,5vw,42px);text-align:center}.quiz-options{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;margin:24px 0}.quiz-option{background:#ffffff12;border:1px solid #ffffff35;border-radius:16px;color:white;padding:16px;transition:background .2s}.quiz-option:hover{background:#ffffff25}.quiz-option.selected{background:#ed5d9140;border-color:#f6a9c4}.quiz-count{color:var(--gold);font-size:.8rem;letter-spacing:.12em;text-transform:uppercase}.cake-wrap{max-width:700px;margin:auto;text-align:center}.cake{font-size:clamp(6rem,18vw,11rem);filter:drop-shadow(0 20px 20px #4d21431f);animation:cakeBob 3s ease-in-out infinite}.cake-message{min-height:65px;margin:16px 0;color:var(--muted)}.gift-stage{max-width:700px;margin:auto;text-align:center}.gift-box{font-size:clamp(7rem,20vw,12rem);display:block;filter:drop-shadow(0 25px 24px #0003);animation:giftBob 2.5s ease-in-out infinite}.gift-reveal{padding:24px;border:1px solid #ffffff30;border-radius:22px;background:#ffffff0d;margin:24px auto;max-width:600px}.letter-scene{min-height:100svh;display:grid;place-items:center;padding:110px 20px 80px;background:radial-gradient(ellipse at 15% 15%,#6b3b70 0,transparent 40%),radial-gradient(ellipse at 85% 80%,#493064 0,transparent 45%),#20132d;color:white;position:relative;overflow:hidden}.letter-shell{width:min(780px,100%);position:relative;z-index:2;text-align:center}.letter-shell h2{color:#fff0f7}.letter-paper{background:#fff9f0;color:#3d2a3e;border-radius:5px 5px 18px 18px;padding:clamp(24px,6vw,58px);text-align:left;box-shadow:0 30px 90px #0005;position:relative;max-height:none}.letter-paper:before{content:"";position:absolute;inset:10px;border:1px solid #e8d8c7;pointer-events:none}.letter-paper h3{font-family:'Sacramento',cursive;font-size:2.8rem;color:#b4497a;margin-bottom:12px}.letter-body{white-space:pre-line;font-family:'Playfair Display',serif;font-size:clamp(1rem,2vw,1.13rem);line-height:1.95;min-height:150px;position:relative}.signature{font-family:'Sacramento',cursive;font-size:2.3rem;color:#b4497a;margin-top:20px}.final-close{font-family:'Playfair Display',serif;font-size:clamp(1.2rem,3vw,2rem);color:#ffe5f0;margin-top:35px}.letter-controls{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;margin:25px 0}.footer{background:#1a1024;color:#d9c6df;text-align:center;padding:28px 20px;font-size:.85rem}.modal{position:fixed;inset:0;z-index:70;background:#1b1029cc;backdrop-filter:blur(8px);display:grid;place-items:center;padding:20px}.modal-card{width:min(560px,100%);max-height:85vh;overflow:auto;background:#fffaf7;color:var(--ink);border-radius:26px;padding:30px;box-shadow:0 25px 90px #0004;position:relative}.modal-close{position:absolute;right:14px;top:14px;border:0;background:#f9e5ed;border-radius:50%;width:36px;height:36px;color:#8c3d6a}.modal-card h3{font-family:'Playfair Display',serif;font-size:1.8rem}.modal-message{line-height:1.85}.toast{position:fixed;bottom:20px;left:50%;transform:translate(-50%,20px);opacity:0;pointer-events:none;z-index:100;background:#30203c;color:white;border:1px solid #ffffff25;border-radius:999px;padding:12px 18px;transition:all .3s;max-width:calc(100% - 24px);text-align:center}.toast.show{opacity:1;transform:translate(-50%,0)}.music-note{position:fixed;right:18px;bottom:18px;z-index:35;background:#fffaf5;border:1px solid #f2c7d8;color:#9a3f6a;border-radius:999px;padding:12px 15px;box-shadow:0 8px 24px #0001}.sparkle{position:absolute;pointer-events:none;color:#ffdbeb;animation:sparkle 3s ease-in-out infinite}.section-divider{text-align:center;color:#e59bb8;font-size:1.5rem;padding-top:20px}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-25px)}}@keyframes starDrift{to{background-position:250px 220px}}@keyframes heartRise{0%{opacity:0;transform:translateY(0) scale(.6) rotate(0)}15%{opacity:1}100%{opacity:0;transform:translateY(-220px) scale(1.4) rotate(25deg)}}@keyframes sparkle{0%,100%{opacity:.2;transform:scale(.8)}50%{opacity:1;transform:scale(1.2)}}@keyframes cakeBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-10px)}}@keyframes giftBob{0%,100%{transform:translateY(0) rotate(-2deg)}50%{transform:translateY(-10px) rotate(2deg)}}@keyframes confettiFall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+@media(max-width:850px){.cards{grid-template-columns:repeat(2,minmax(0,1fr))}.reason-grid{grid-template-columns:repeat(4,minmax(0,1fr))}.envelope-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.memory-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.moon{right:8%;width:55px;height:55px}.moon:after{width:53px;height:53px;left:15px;top:-5px}}
+@media(max-width:560px){.section{padding:76px 17px}.topbar{padding:8px 10px}.brand{font-size:.9rem}.icon-btn{font-size:.75rem;padding:8px 10px}.cards{grid-template-columns:1fr}.reason-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.envelope-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.memory-grid{grid-template-columns:1fr 1fr;gap:12px}.memory-card{padding:8px 8px 15px}.memory-card h3{font-size:.98rem;margin:12px 5px 4px}.memory-card p{font-size:.78rem;margin:0 5px}.quiz-options{grid-template-columns:1fr}.hero .script{margin-top:10px}.scroll-cue{display:none}.letter-paper{padding:28px 22px}.letter-paper:before{inset:6px}.letter-body{font-size:1rem}.music-note{bottom:12px;right:12px}.timeline-item{padding-left:45px}.timeline:before{left:15px}.timeline-dot{left:6px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="progress-wrap"><div class="progress-bar" id="progressBar"></div></div>
+<header class="topbar">
+  <div class="brand">♡ A Little Universe</div>
+  <div class="top-actions">
+    <button class="icon-btn" id="musicToggle" aria-label="Toggle music">♫ Music: off</button>
+    <button class="icon-btn" id="heartBurst" aria-label="Send hearts">♡ Send love</button>
+  </div>
+</header>
+
+<section class="hero" id="home">
+  <div class="moon"></div><div class="orb one"></div><div class="orb two"></div>
+  <span class="sparkle" style="top:22%;left:24%">✦</span><span class="sparkle" style="top:68%;right:20%;animation-delay:1s">✧</span>
+  <div class="hero-inner">
+    <span class="eyebrow">A tiny universe, made just for you</span>
+    <span class="script" id="heroScript">For my favorite person...</span>
+    <h1>Happy Birthday,<br><span id="heroName">My Favorite Human</span> <span style="color:#ffc4dc">♡</span></h1>
+    <p>Somewhere in this enormous universe, there is someone who makes ordinary days feel a little more magical. Today, this little universe is celebrating you.</p>
+    <div class="hero-actions">
+      <button class="btn" onclick="startJourney()">Open Your Surprises ✨</button>
+      <button class="btn ghost" onclick="document.querySelector('#wishes').scrollIntoView({behavior:'smooth'})">Take a little peek ↓</button>
+    </div>
+    <div class="pill" style="margin-top:28px;background:#ffffff0d;border-color:#ffffff30;color:#ffe5ef">Made with love, one little surprise at a time</div>
+  </div>
+  <div class="scroll-cue">SCROLL TO DISCOVER · ↓</div>
+</section>
+
+<section class="section section-blush" id="wishes">
+ <div class="container">
+  <div class="section-intro"><span class="eyebrow">Surprise 01 · A sky full of wishes</span><h2>A thousand beautiful things for you ✨</h2><p>Little wishes for your birthday, and for all the ordinary days that deserve a little magic too.</p></div>
+  <div class="cards" id="wishesGrid"></div>
+  <div class="center" style="margin-top:28px"><button class="btn" onclick="confettiBurst();heartBurst(22);showToast('A whole universe of wishes is on its way to you ✨')">Send more wishes into the universe ✨</button></div>
+ </div>
+</section>
+
+<section class="section" id="memories">
+ <div class="container">
+  <div class="section-intro"><span class="eyebrow">Surprise 02 · Little moments</span><h2>Our little memory garden 📸</h2><p>Add your favorite photographs and turn this space into a scrapbook of real memories. Tap any card to see its note.</p></div>
+  <div class="center" style="margin-bottom:18px"><label class="btn secondary" for="photoUpload">＋ Preview photos from my device</label><input id="photoUpload" type="file" accept="image/*" multiple class="hidden" /></div><p class="center tiny muted" style="max-width:720px;margin:0 auto 28px">For photos that stay on the published website, place files named <strong>photo-1.jpg</strong> through <strong>photo-6.jpg</strong> in <code>assets/memories/</code>. The six frames below are ready for them.</p>
+  <div class="memory-grid" id="memoryGrid"></div>
+  <p class="center tiny muted" style="margin-top:20px">Device previews are temporary. To include photos in the website link, use the six named photo slots described above and redeploy.</p>
+ </div>
+</section>
+
+<section class="section section-lav" id="reasons">
+ <div class="container">
+  <div class="section-intro"><span class="eyebrow">Surprise 03 · Tiny truths</span><h2>50 little reasons you're special to me 💗</h2><p>Tap each heart to reveal a reason. Replace any note with a detail that is uniquely hers.</p><div class="pill" id="reasonProgress">0 of 50 discovered ♡</div></div>
+  <div class="reason-grid" id="reasonGrid"></div>
+ </div>
+</section>
+
+<section class="section" id="letters">
+ <div class="container">
+  <div class="section-intro"><span class="eyebrow">Surprise 04 · Open when...</span><h2>Little letters for different moments 💌</h2><p>Some words are meant for a particular kind of day. Open whichever envelope you need.</p></div>
+  <div class="envelope-grid" id="envelopeGrid"></div>
+ </div>
+</section>
+
+<section class="section section-blush" id="story">
+ <div class="container">
+  <div class="section-intro"><span class="eyebrow">Surprise 05 · The chapters</span><h2>A story still being written ♡</h2><p>Use these editable milestones to tell your own story. Keep only the moments that are true to you.</p></div>
+  <div class="timeline" id="timeline"></div>
+ </div>
+</section>
+
+<section class="section section-dark" id="quiz">
+ <div class="container">
+  <div class="section-intro"><span class="eyebrow">Surprise 06 · A tiny game</span><h2>A little birthday quiz 🎀</h2><p>There are no wrong answers here. Just a few sweet questions and a surprise at the end.</p></div>
+  <div class="quiz-box" id="quizBox"><div class="quiz-count" id="quizCount">QUESTION 1 OF 8</div><h3 id="quizQuestion" class="serif" style="font-size:clamp(1.5rem,4vw,2.2rem);margin:18px 0">What should our next little adventure be?</h3><div class="quiz-options" id="quizOptions"></div><p id="quizFeedback" class="muted" style="color:#e9d9ee;min-height:25px"></p><button class="btn" id="quizNext">Next question →</button></div>
+  <div class="center hidden" id="quizDone"><div style="font-size:4rem">🎉💗✨</div><h3 class="serif" style="font-size:2rem">Surprise unlocked!</h3><p>Whatever your answers, I hope we get to make many more happy memories.</p><button class="btn" onclick="document.querySelector('#cake').scrollIntoView({behavior:'smooth'})">Continue to your cake 🎂</button></div>
+ </div>
+</section>
+
+<section class="section" id="cake">
+ <div class="container cake-wrap">
+  <div class="section-intro"><span class="eyebrow">Surprise 07 · Make a wish</span><h2>A little cake, just for you 🎂</h2><p>Take a breath, think of a wish, and tap the button when you're ready.</p></div>
+  <div class="cake" id="cakeEmoji" aria-label="Birthday cake">🎂</div>
+  <p class="cake-message" id="cakeMessage">Make a wish, birthday girl. The universe is listening. ✨</p>
+  <button class="btn" id="blowCandles">Blow out the candles ✨</button>
+ </div>
+</section>
+
+<section class="section section-dark" id="gift">
+ <div class="container gift-stage">
+  <div class="section-intro"><span class="eyebrow">Surprise 08 · One last gift</span><h2>Some gifts don't fit in a box...</h2><p>I've saved one last thing for you. Ready?</p></div>
+  <span class="gift-box" id="giftEmoji">🎁</span>
+  <button class="btn" id="unwrapBtn">Unwrap your final surprise 🎀</button>
+  <div class="gift-reveal hidden" id="giftReveal"><p class="serif" style="font-size:1.35rem;color:#ffe8f1">Some gifts cannot fit inside a box. Some feelings cannot fit inside a message. But I still want to try... ♡</p><p style="color:#dfcfe2">One last surprise is waiting for you.</p><button class="btn" onclick="document.querySelector('#finalLetter').scrollIntoView({behavior:'smooth'})">Read my heart 💌</button></div>
+ </div>
+</section>
+
+<section class="letter-scene" id="finalLetter">
+ <div class="letter-shell">
+  <span class="eyebrow">The final surprise</span>
+  <h2>A letter from my heart, just for you ❤️</h2>
+  <p style="color:#e2d2e8;max-width:570px;margin:0 auto 28px">Take your time. These words are yours.</p>
+  <div id="envelopeClosed" style="font-size:clamp(6rem,15vw,9rem);filter:drop-shadow(0 15px 25px #0004)">💌</div>
+  <div class="letter-controls" id="letterOpenControls"><button class="btn" id="openLetter">Open my letter</button></div>
+  <article class="letter-paper hidden" id="letterPaper">
+   <h3 id="letterHeading">To my favorite person,</h3>
+   <div class="letter-body" id="letterBody"></div>
+   <div class="signature" id="signature">With all my love, ♡</div>
+  </article>
+  <div class="letter-controls hidden" id="letterAfterControls"><button class="btn secondary" id="showFullLetter">Read it all at once</button><button class="btn" onclick="heartBurst(35);confettiBurst()">Send a little love into the universe ♡</button></div>
+  <div class="final-close hidden" id="finalClose">Happy Birthday, my favorite person.<br>Always, and a little more. ♾️</div>
+ </div>
+</section>
+<footer class="footer">Made with a little code and a whole lot of heart ♡ <span id="footerName"></span></footer>
+
+<div class="modal hidden" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle"><div class="modal-card"><button class="modal-close" id="modalClose" aria-label="Close dialog">×</button><h3 id="modalTitle"></h3><div id="modalContent" class="modal-message"></div></div></div>
+<div class="toast" id="toast" role="status"></div>
+<audio id="bgMusic" loop preload="none"></audio>
+
+<script>
+/* PERSONALIZE THIS CONFIGURATION. Replace the sample text with real names and memories. */
+const CONFIG = {
+  girlfriendName: "Birzuu",
+  yourName: "Affu",
+  birthdayDate: "",
+  musicPath: "assets/audio/birthday-music.mp3",
+  birthdayWishes: [
+    "May your smile always find a reason to exist, even on the days when life feels a little difficult.",
+    "May every dream you're brave enough to whisper find its way toward becoming real.",
+    "May life surprise you with beautiful moments when you least expect them.",
+    "May you always know that you deserve love, happiness, respect, and good things.",
+    "May your future be full of opportunities that excite you and people who appreciate you.",
+    "May every candle you blow out bring you one step closer to the life you dream about.",
+    "May you find calm when the world feels loud, and courage when the next step feels uncertain.",
+    "May you keep discovering new places, new passions, and new reasons to be proud of yourself.",
+    "May laughter find you often, especially when you need it most.",
+    "May the kindness you give to others return to you in unexpected and lovely ways.",
+    "May you always make room for the things that make your heart feel alive.",
+    "May you be surrounded by people who celebrate your wins and support you through the hard parts.",
+    "May you never feel that you have to be perfect to be worthy of love.",
+    "May this year bring fresh beginnings and the courage to say yes to good possibilities.",
+    "May your quiet hopes become the memories you look back on with a happy heart.",
+    "May you find beauty in small things: warm sunlight, favorite songs, and unhurried mornings.",
+    "May you keep growing without ever forgetting to be gentle with yourself.",
+    "May you feel proud of how far you've come, even while you're still becoming.",
+    "May every challenge teach you something without taking away your softness.",
+    "May your life be sprinkled with spontaneous plans and stories worth retelling.",
+    "May you always have a safe place to rest and people who make you feel understood.",
+    "May you trust your own timing and never compare your chapter to someone else's.",
+    "May the things you work hard for meet you with beautiful possibilities.",
+    "May you get more of the kind of days that make you say, 'I wish this could last longer.'",
+    "And above all, may you feel loved today and on all the days that follow."
+  ],
+  reasons: [
+    "Your smile can make an ordinary moment feel brighter.","The way you bring your own perspective to things.","Your kindness, especially in the little moments.","Your laugh and the happiness behind it.","The way you keep learning and growing.",
+    "You have your own special kind of magic.","You make conversations feel meaningful.","Your courage to keep going on hard days.","The dreams you carry and work toward.","Your ability to make simple things memorable.",
+    "The little details that make you uniquely you.","Your warmth when someone needs it.","The way your eyes light up about things you love.","Your honesty and your individuality.","You deserve to be celebrated just as you are.",
+    "Your sense of humor.","The way you can make a day feel less ordinary.","Your curiosity about the world.","Your strength, even when you don't notice it.","The way you care about the people close to you.",
+    "Your determination to keep moving forward.","Your lovely, imperfect, real self.","The excitement you bring to things you care about.","Your ability to surprise me in the best ways.","Your presence makes moments feel special.",
+    "The little things you notice that others might miss.","Your willingness to try again.","Your hopes for the future.","The way you can turn a small moment into a memory.","Your unique way of seeing the world.",
+    "You have so much more potential than you realize.","Your softness is a strength, not a weakness.","The way you make your own choices.","Your resilience through changes.","Your thoughtful side.",
+    "Your ability to make people feel included.","The things that make you laugh uncontrollably.","Your beautiful mix of strengths and quirks.","Your passion when you talk about something you love.","Your dreams deserve room to grow.",
+    "You don't need to be like anyone else.","The joy you bring to the people around you.","Your capacity to keep becoming a new version of yourself.","The little habits that make you, you.","Your heart deserves gentleness.",
+    "You make the world more interesting simply by being in it.","You are allowed to take up space and shine.","You deserve to celebrate your own progress.","There is nobody else who is exactly you.","And because this list could keep going. ♡"
+  ],
+  openWhen: [
+    ["Open when you miss me","I hope this little note makes the distance between this moment and our next hello feel a little smaller. Take a breath, think of a happy memory, and remember that you are cared for. Until the next time we get to talk or meet, sending you the biggest imaginary hug. ♡"],
+    ["Open when you feel sad","You don't have to turn a difficult day into a good one immediately. It's okay to feel what you feel. Be gentle with yourself, take things one small step at a time, and give yourself the same kindness you would give someone you love. You matter on the hard days, too."],
+    ["Open when you need a smile","Emergency smile delivery! 🚨 Please imagine a tiny, very serious committee of puppies voting unanimously that you deserve a treat, a cozy blanket, and at least one ridiculous laugh today. Official decision: approved. ♡"],
+    ["Open when you feel stressed","Pause for a moment. Unclench your jaw, relax your shoulders, and take one slow breath. You don't have to solve everything all at once. Choose the next small step, and let the rest wait its turn. You can do this at your own pace."],
+    ["Open when you doubt yourself","A difficult moment is not a measure of your worth. Look at how much you have already learned and how many times you have kept going. You don't need to have everything figured out today. I hope you give yourself credit for trying."],
+    ["Open when you cannot sleep","Let the day loosen its hold on you. You can set tomorrow's worries down for now. Get comfortable, breathe slowly, and imagine a sky full of tiny stars reminding you that this moment can be quiet. You deserve rest."],
+    ["Open when you need motivation","You don't have to make a giant leap. A small, honest step still counts. Start where you are, use what you have, and give yourself permission to learn along the way. Your future is built from little steps like these."],
+    ["Open when you want to feel loved","Here is your reminder: you are worthy of care, respect, patience, joy, and a love that lets you be fully yourself. You don't have to earn kindness by being perfect. I hope you feel appreciated for exactly who you are."],
+    ["Open when you have a wonderful day","YES! Keep this feeling close and let yourself celebrate it properly. Tell someone, take a picture, save a little detail, or dance around your room if you feel like it. Your happiness deserves to be celebrated. 🎉"],
+    ["Open when you need a reminder","You are one person in a huge universe, and still there is nobody else who is exactly you. Your thoughts, hopes, humor, and little quirks make you your own kind of wonderful. Never underestimate the beauty of being yourself. ♡"]
+  ],
+  timeline: [
+    ["The beginning of our story","Add your real first meeting or first conversation here.","Where our story began ♡"],
+    ["Little moments, big memories","Replace this with a real moment you both remember fondly.","A memory worth keeping"],
+    ["Three years of us","Three years of learning, growing, laughing, and collecting moments together. Add a personal memory here to make this milestone yours.","3 years together ❤️"],
+    ["Today: celebrating my Birzuu","Today is all about celebrating you, the person you are, and all the beautiful things still ahead.","Your birthday ♡"],
+    ["All the chapters still to come","There are still new places to discover, conversations to have, and memories waiting for us.","Our story continues... ♾️"]
+  ],
+  quizQuestions: [
+    {q:"What should our next little adventure be?", options:["A cozy movie night","A spontaneous day trip","A food-tasting adventure","A sunset walk"]},
+    {q:"Choose a perfect birthday mood.", options:["Cute and cozy","Sparkles and celebration","Peaceful and dreamy","A little bit of everything"]},
+    {q:"What makes a memory feel special?", options:["The people in it","A funny little surprise","Being somewhere new","The feeling it leaves"]},
+    {q:"Pick a tiny treat for today.", options:["Something chocolatey","A favorite drink","A delicious meal","A surprise snack"]},
+    {q:"Which scene feels most magical?", options:["A starry night","A pink sunset","Rain on the window","A city full of lights"]},
+    {q:"What should we do more often?", options:["Laugh at silly things","Try something new","Take more photos","Make time to talk"]},
+    {q:"Pick a soundtrack for this chapter.", options:["A love song","A happy playlist","Soft acoustic music","Our own inside-joke song"]},
+    {q:"One word for the year ahead?", options:["Joy","Adventure","Peace","Possibility"]}
+  ],
+  finalLetter: `Happy Birthday, my love. ❤️
+
+Today is your day, but somehow, it feels like a gift to everyone lucky enough to know you.
+
+I wish I could put every feeling into words, but sometimes the heart carries things that language can only try to explain. So today, I want to tell you the things I hope you never forget.
+
+You deserve happiness that feels genuine, love that feels safe, respect that never fades, and dreams that have room to become real. I hope you keep growing into the person you want to be. I hope you laugh until your cheeks hurt, discover places that take your breath away, and collect little moments that make life feel magical.
+
+When life gets difficult, please remember that you don't have to be perfect to be loved. You are allowed to have hard days, make mistakes, change your mind, rest, and begin again. None of those things make you any less wonderful.
+
+Thank you for being exactly who you are. These three years have become a meaningful part of my story, and I hope we keep making memories, learning about each other, and finding joy in the little things. I hope this new year of your life brings you new opportunities, peaceful moments, beautiful surprises, and a thousand reasons to smile.
+
+I can't promise that every day will be perfect, but I hope there will be many more memories to make, silly things to laugh about, places to discover, and little moments that become our favorites.
+
+If I could give you one birthday wish, it would be this: may life treat your heart gently, may you always find the courage to follow your dreams, and may you never forget how much good you deserve.
+
+Happy Birthday, my Birzuu, my favorite person. May the year ahead be as beautiful as the happiness you bring into the world.
+
+With all my love,`
+};
+
+document.title = `Happy Birthday, ${CONFIG.girlfriendName} ♡`;
+document.getElementById('heroName').textContent = CONFIG.girlfriendName;
+document.getElementById('footerName').textContent = ` · For ${CONFIG.girlfriendName} ♡`;
+document.getElementById('signature').textContent = `With all my love, ${CONFIG.yourName} ♡`;
+document.getElementById('bgMusic').src = CONFIG.musicPath;
+
+const wishesGrid=document.getElementById('wishesGrid');
+const wishEmojis=["🌷","✨","🌙","🦋","🌸","💫","🌈","🕊️","🍓","🌻","💖","⭐","☁️","🪷","🎀","🧸","🌼","💐","🪄","💗","🌟","🫶","🍰","🌺","🩷"];
+CONFIG.birthdayWishes.forEach((wish,i)=>{const el=document.createElement('article');el.className='wish-card';el.innerHTML=`<span class="emoji">${wishEmojis[i%wishEmojis.length]}</span><p>${escapeHTML(wish)}</p>`;wishesGrid.appendChild(el);});
+
+const reasonsSeen=new Set();
+const reasonGrid=document.getElementById('reasonGrid');
+CONFIG.reasons.forEach((reason,i)=>{const el=document.createElement('button');el.className='reason-card';el.setAttribute('aria-label',`Reveal reason ${i+1}`);el.innerHTML=`<span class="reason-num">LITTLE REASON ${String(i+1).padStart(2,'0')}</span><span class="heart-icon">♡</span><span class="reason-text hidden"></span>`;el.addEventListener('click',()=>{const txt=el.querySelector('.reason-text');if(txt.classList.contains('hidden')){txt.textContent=reason;txt.classList.remove('hidden');el.querySelector('.heart-icon').textContent='♥';reasonsSeen.add(i);document.getElementById('reasonProgress').textContent=`${reasonsSeen.size} of 50 discovered ♡`;heartBurst(1);}else{txt.classList.add('hidden');el.querySelector('.heart-icon').textContent='♡';}});reasonGrid.appendChild(el);});
+
+const envelopeGrid=document.getElementById('envelopeGrid');
+CONFIG.openWhen.forEach(([title,message],i)=>{const el=document.createElement('button');el.className='envelope-card';el.innerHTML=`<span class="env">💌</span><strong>${escapeHTML(title)}</strong><span class="tiny muted" style="display:block;margin-top:8px">Tap to open</span>`;el.addEventListener('click',()=>openModal(title,`<p>${escapeHTML(message).replace(/\n/g,'<br>')}</p><p style="color:#b4497a;font-family:Playfair Display,serif">With love, always ♡</p>`));envelopeGrid.appendChild(el);});
+
+const timeline=document.getElementById('timeline');
+CONFIG.timeline.forEach(([title,desc,date],i)=>{const el=document.createElement('div');el.className='timeline-item';el.innerHTML=`<span class="timeline-dot"></span><article class="timeline-card"><div class="date">${escapeHTML(date)}</div><h3 class="serif" style="font-size:1.35rem;margin:10px 0">${escapeHTML(title)}</h3><p style="margin:0;color:var(--muted)">${escapeHTML(desc)}</p></article>`;timeline.appendChild(el);});
+
+const memoryGrid=document.getElementById('memoryGrid');
+/* PHOTO SLOTS:
+   Put your photos in assets/memories/ with these exact filenames.
+   Example: assets/memories/photo-1.jpg
+   You can change the captions below to your real memories.
+*/
+const defaultMemories=[
+ ["Our first favorite memory","Replace this with a real caption or inside joke.","assets/memories/photo-2.jpg","🌷"],
+ ["That beautiful smile","A photo that always makes you smile.","assets/memories/photo-1.jpg","💗"],
+ ["A day to remember","Add the date or a tiny detail from this day.","assets/memories/photo-3.jpg","✨"],
+ ["Our kind of happy","A silly moment, a favorite place, or a little adventure.","assets/memories/photo-4.jpg","🎀"],
+ ["Three years of memories","Add one of your favorite photos from these three years.","assets/memories/photo-5.jpg","🦋"],
+ ["More memories ahead","One more photo for the story we're still writing.","assets/memories/photo-6.jpg","🌙"]
+];
+function addMemoryCard(title,caption,src,emoji="💗"){
+ const el=document.createElement('article');el.className='memory-card';el.style.setProperty('--rotate',`${(Math.random()*4-2).toFixed(1)}deg`);
+ el.innerHTML=`<div class="photo-placeholder"><span class="placeholder-emoji" style="font-size:3rem">${emoji}</span>${src?`<img src="${src}" alt="${escapeHTML(title)}" loading="lazy" style="display:none">`:''}</div><h3>${escapeHTML(title)}</h3><p>${escapeHTML(caption)}</p>`;
+ const img=el.querySelector('img');const emojiEl=el.querySelector('.placeholder-emoji');
+ if(img){img.onload=()=>{img.style.display='block';emojiEl.style.display='none';};img.onerror=()=>{img.style.display='none';emojiEl.style.display='grid';};}
+ el.addEventListener('click',()=>openModal(title,`<div style="font-size:3rem;text-align:center;margin:8px">${emoji}</div><p>${escapeHTML(caption)}</p>${src?`<img src="${src}" alt="${escapeHTML(title)}" onerror="this.style.display='none'" style="width:100%;border-radius:14px">`:''}`));
+ memoryGrid.appendChild(el);
+}
+defaultMemories.forEach(m=>addMemoryCard(...m));
+document.getElementById('photoUpload').addEventListener('change',e=>{Array.from(e.target.files||[]).forEach((file,i)=>{const url=URL.createObjectURL(file);addMemoryCard(file.name.replace(/\.[^.]+$/,''),"A memory picked just for this little universe.",url,"📸");});showToast("Your photos have been added in this browser ♡");});
+
+let quizIndex=0;const quizAnswers=[];
+function renderQuiz(){const q=CONFIG.quizQuestions[quizIndex];document.getElementById('quizCount').textContent=`QUESTION ${quizIndex+1} OF ${CONFIG.quizQuestions.length}`;document.getElementById('quizQuestion').textContent=q.q;document.getElementById('quizFeedback').textContent='';const options=document.getElementById('quizOptions');options.innerHTML='';q.options.forEach((op,i)=>{const b=document.createElement('button');b.className='quiz-option';b.textContent=op;b.addEventListener('click',()=>{options.querySelectorAll('button').forEach(x=>x.classList.remove('selected'));b.classList.add('selected');quizAnswers[quizIndex]=op;document.getElementById('quizFeedback').textContent='A lovely choice. ♡';});options.appendChild(b);});document.getElementById('quizNext').textContent=quizIndex===CONFIG.quizQuestions.length-1?'Finish & unlock surprise ✨':'Next question →';}
+document.getElementById('quizNext').addEventListener('click',()=>{if(!quizAnswers[quizIndex]){document.getElementById('quizFeedback').textContent='Choose whichever answer feels right to you ♡';return;}if(quizIndex<CONFIG.quizQuestions.length-1){quizIndex++;renderQuiz();}else{document.getElementById('quizBox').classList.add('hidden');document.getElementById('quizDone').classList.remove('hidden');confettiBurst();}});
+renderQuiz();
+
+document.getElementById('blowCandles').addEventListener('click',()=>{document.getElementById('cakeEmoji').textContent='🍰';document.getElementById('cakeMessage').textContent='Wish made! May the year ahead bring you so many reasons to smile. ✨';document.getElementById('blowCandles').textContent='Make another wish ♡';confettiBurst();heartBurst(18);});
+document.getElementById('unwrapBtn').addEventListener('click',()=>{document.getElementById('giftEmoji').textContent='💝';document.getElementById('giftReveal').classList.remove('hidden');document.getElementById('unwrapBtn').classList.add('hidden');heartBurst(20);confettiBurst();});
+
+const letterText=CONFIG.finalLetter;
+let typingTimer=null,typed=false;
+document.getElementById('openLetter').addEventListener('click',()=>{document.getElementById('envelopeClosed').classList.add('hidden');document.getElementById('letterOpenControls').classList.add('hidden');document.getElementById('letterPaper').classList.remove('hidden');document.getElementById('letterAfterControls').classList.remove('hidden');typeLetter();});
+function typeLetter(){clearInterval(typingTimer);const body=document.getElementById('letterBody');body.textContent='';typed=false;let i=0;typingTimer=setInterval(()=>{body.textContent=letterText.slice(0,i+=3);if(i>=letterText.length){clearInterval(typingTimer);typed=true;showFinalClose();}},22);}
+document.getElementById('showFullLetter').addEventListener('click',()=>{clearInterval(typingTimer);document.getElementById('letterBody').textContent=letterText;typed=true;showFinalClose();});
+function showFinalClose(){document.getElementById('finalClose').classList.remove('hidden');}
+const modal=document.getElementById('modal');
+function openModal(title,content){document.getElementById('modalTitle').textContent=title;document.getElementById('modalContent').innerHTML=content;modal.classList.remove('hidden');document.getElementById('modalClose').focus();}
+function closeModal(){modal.classList.add('hidden');}
+document.getElementById('modalClose').addEventListener('click',closeModal);modal.addEventListener('click',e=>{if(e.target===modal)closeModal();});document.addEventListener('keydown',e=>{if(e.key==='Escape')closeModal();});
+function escapeHTML(s){return String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));}
+let toastTimer;function showToast(msg){const t=document.getElementById('toast');t.textContent=msg;t.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>t.classList.remove('show'),2600);}
+function heartBurst(count=8){const n=typeof count==='number'?count:8;for(let i=0;i<n;i++){const h=document.createElement('span');h.className='heart';h.textContent=['♡','♥','💗','✨','💕'][Math.floor(Math.random()*5)];h.style.left=`${Math.random()*95}vw`;h.style.bottom=`${8+Math.random()*20}px`;h.style.animationDelay=`${Math.random()*.7}s`;h.style.fontSize=`${14+Math.random()*20}px`;document.body.appendChild(h);setTimeout(()=>h.remove(),3500);}}
+function confettiBurst(){for(let i=0;i<70;i++){const c=document.createElement('i');c.style.position='fixed';c.style.zIndex='80';c.style.pointerEvents='none';c.style.top='-15px';c.style.left=`${Math.random()*100}vw`;c.style.width=`${5+Math.random()*7}px`;c.style.height=`${8+Math.random()*10}px`;c.style.borderRadius=Math.random()>.5?'50%':'2px';c.style.background=['#f6a9c4','#ed5d91','#dcd2ff','#f1d49b','#fff8f5'][Math.floor(Math.random()*5)];c.style.animation=`confettiFall ${2+Math.random()*2.5}s linear forwards`;c.style.animationDelay=`${Math.random()*.4}s`;document.body.appendChild(c);setTimeout(()=>c.remove(),5000);}}
+function startJourney(){heartBurst(16);document.querySelector('#wishes').scrollIntoView({behavior:'smooth'});}
+document.getElementById('heartBurst').addEventListener('click',()=>heartBurst(12));
+window.addEventListener('scroll',()=>{const max=document.documentElement.scrollHeight-window.innerHeight;document.getElementById('progressBar').style.width=`${max>0?(window.scrollY/max)*100:0}%`;});
+let musicOn=false;const audio=document.getElementById('bgMusic');document.getElementById('musicToggle').addEventListener('click',async()=>{if(!musicOn){try{await audio.play();musicOn=true;document.getElementById('musicToggle').textContent='♫ Music: on';showToast('Music is playing ♡');}catch(e){showToast('Add your music file to assets/audio/birthday-music.mp3 first.');}}else{audio.pause();musicOn=false;document.getElementById('musicToggle').textContent='♫ Music: off';}});
+</script>
+</body>
+</html>
